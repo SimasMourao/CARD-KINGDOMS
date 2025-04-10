@@ -1,4 +1,6 @@
-menu = ["jogar", "config.", "sair"];
+menu = ["voltar"];
+
+//baralho = ["lama", "Flores"];
 
 escala[array_length(menu)-1] = 0;
 

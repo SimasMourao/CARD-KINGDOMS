@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_menu",
+  "%Name":"fnt_texto_g",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":13,
@@ -127,7 +127,7 @@
   "last":0,
   "lineHeight":17,
   "maintainGms1Font":false,
-  "name":"fnt_menu",
+  "name":"fnt_texto_g",
   "parent":{
     "name":"Font",
     "path":"folders/Font.yy",
@@ -144,10 +144,7 @@
   "sdfSpread":32,
   "size":12.0,
   "styleName":"Medium",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"",
   "usesSDF":true,
 }

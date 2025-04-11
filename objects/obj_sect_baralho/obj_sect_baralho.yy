@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_moldura",
-    "path":"sprites/spr_moldura/spr_moldura.yy",
+    "name":"spr_botao_bar",
+    "path":"sprites/spr_botao_bar/spr_botao_bar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

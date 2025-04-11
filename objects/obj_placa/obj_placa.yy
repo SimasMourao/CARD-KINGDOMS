@@ -29,7 +29,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"txt","filters":[],"listItems":[],"multiselect":false,"name":"txt","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"texto","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"fnt","filters":[],"listItems":[],"multiselect":false,"name":"fnt","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"fnt","filters":[],"listItems":[],"multiselect":false,"name":"fnt","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"fnt_titulo","path":"fonts/fnt_titulo/fnt_titulo.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fnt_titulo","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"c","filters":[],"listItems":[],"multiselect":false,"name":"c","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FFFFFFFF","varType":7,},
   ],
   "resourceType":"GMObject",

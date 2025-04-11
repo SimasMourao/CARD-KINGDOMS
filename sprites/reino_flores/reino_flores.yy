@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_moldura",
+  "%Name":"reino_flores",
   "bboxMode":0,
   "bbox_bottom":0,
   "bbox_left":0,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"ce1305a5-185e-415d-9191-06fc58801da4","blendMode":0,"displayName":"default","isLocked":false,"name":"ce1305a5-185e-415d-9191-06fc58801da4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_moldura",
+  "name":"reino_flores",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Cartas",
-    "path":"folders/Sprites/Cartas.yy",
+    "name":"Reinos",
+    "path":"folders/Sprites/Cartas/Reinos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_moldura",
+    "%Name":"reino_flores",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_moldura",
+    "name":"reino_flores",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -71,7 +71,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"58a8a7ff-9059-4e94-8675-83a5b9f4c749","path":"sprites/spr_moldura/spr_moldura.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"58a8a7ff-9059-4e94-8675-83a5b9f4c749","path":"sprites/reino_flores/reino_flores.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"6e95b473-09c7-48fe-b5fb-1a89c795b92f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -1,0 +1,1 @@
+escala_coracao = 3;

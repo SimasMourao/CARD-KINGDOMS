@@ -19,3 +19,11 @@ switch(global.vida){
 	default:
 	draw_sprite_ext(spr_coracao, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
+	
+if(global.pause == true){
+	var guix = display_get_gui_width();
+	var guiy =display_get_gui_height();
+	
+	draw_rectangle_color(guix, guiy, -guix, -guiy, c_black, c_black, c_black, c_black, 0);
+	
+}	

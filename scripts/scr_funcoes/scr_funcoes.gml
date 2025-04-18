@@ -27,20 +27,20 @@ function desenhando_cartas(){
 
 	draw_sprite_ext(spr_moldura, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
-	draw_sprite_ext(spr_tipo, 0, x - 30, y + 55, escala_tipo, escala_tipo, image_angle, image_blend, image_alpha);
+	draw_sprite_ext(spr_tipo, 0, x - 16, y + 28, escala_tipo, escala_tipo, image_angle, image_blend, image_alpha);
 
-	draw_sprite_ext(spr_tipo, 4, x + 30, y + 55, escala_tipo, escala_tipo, image_angle, image_blend, image_alpha);
+	draw_sprite_ext(spr_tipo, 4, x + 18, y + 28, escala_tipo, escala_tipo, image_angle, image_blend, image_alpha);
 
 	draw_set_font(fnt_txt_g);
 
 
-	draw_text_transformed_color(x - 35, y + 15,"0", escala_tipo, escala_tipo, image_angle, c_white, c_white, c_white, c_white,image_alpha);
+	draw_text_transformed_color(x - 19, y + 9,"0", escala_tipo, escala_tipo, image_angle, c_white, c_white, c_white, c_white,image_alpha);
 
-	draw_text_transformed_color(x + 25, y + 15, "0", escala_tipo, escala_tipo, image_angle, c_white, c_white, c_white, c_white,image_alpha);
+	draw_text_transformed_color(x + 15, y + 9, "0", escala_tipo, escala_tipo, image_angle, c_white, c_white, c_white, c_white,image_alpha);
 
 	draw_set_font(-1)
 
-	draw_sprite_ext(spr_reino_lama, 2, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+	draw_sprite_ext(spr_reino_lama, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
 	if(mouse_sobre){
 		draw_set_halign(fa_center);

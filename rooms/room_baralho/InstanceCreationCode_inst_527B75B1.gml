@@ -1,3 +1,5 @@
 acao = function(){
-	room_goto(room_jogo);
+	if(global.bar_select == true){
+		room_goto(room_jogo);
+	}
 }

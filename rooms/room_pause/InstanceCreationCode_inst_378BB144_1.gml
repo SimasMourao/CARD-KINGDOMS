@@ -1,3 +1,5 @@
 acao = function(){
-	room_goto(room_menu);
+	global.pause = false;
+	global.bar_select = false;
+	room_goto(room_jogo);
 }

@@ -11,8 +11,8 @@
   "name":"obj_sect_baralho",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"selec_bar",
+    "path":"folders/Objects/Menu/selec_bar.yy",
   },
   "parentObjectId":null,
   "persistent":false,

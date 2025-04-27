@@ -2,18 +2,20 @@
   "$GMSprite":"",
   "%Name":"spr_reino_flor",
   "bboxMode":0,
-  "bbox_bottom":51,
-  "bbox_left":18,
-  "bbox_right":45,
-  "bbox_top":13,
+  "bbox_bottom":33,
+  "bbox_left":20,
+  "bbox_right":43,
+  "bbox_top":15,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"58a8a7ff-9059-4e94-8675-83a5b9f4c749","name":"58a8a7ff-9059-4e94-8675-83a5b9f4c749","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"65537666-4043-4b33-969a-ce0af29107d8","name":"65537666-4043-4b33-969a-ce0af29107d8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e0d23e8f-7af5-4232-ae63-fc08232f4d99","name":"e0d23e8f-7af5-4232-ae63-fc08232f4d99","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"df6d925e-f977-48de-8d76-d1db376a5429","name":"df6d925e-f977-48de-8d76-d1db376a5429","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"364aac8c-4cb2-41c7-ac18-7a77a60e7925","name":"364aac8c-4cb2-41c7-ac18-7a77a60e7925","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b81d3e44-d0ca-43ef-8aef-8942685b1614","name":"b81d3e44-d0ca-43ef-8aef-8942685b1614","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -50,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":2.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -72,11 +74,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"58a8a7ff-9059-4e94-8675-83a5b9f4c749","path":"sprites/spr_reino_flor/spr_reino_flor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6e95b473-09c7-48fe-b5fb-1a89c795b92f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e0d23e8f-7af5-4232-ae63-fc08232f4d99","path":"sprites/spr_reino_flor/spr_reino_flor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f18a5eac-61aa-4066-8ec3-6ab610baf913","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"65537666-4043-4b33-969a-ce0af29107d8","path":"sprites/spr_reino_flor/spr_reino_flor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c007a340-6fe9-429e-a3a6-64326ddb19b7","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"df6d925e-f977-48de-8d76-d1db376a5429","path":"sprites/spr_reino_flor/spr_reino_flor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"37f7e633-ef3e-4a30-bc3d-297f7d96beec","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"364aac8c-4cb2-41c7-ac18-7a77a60e7925","path":"sprites/spr_reino_flor/spr_reino_flor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8cced9de-0af0-44bc-8583-cb4c8464efda","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b81d3e44-d0ca-43ef-8aef-8942685b1614","path":"sprites/spr_reino_flor/spr_reino_flor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c21bc2c9-9a29-417c-90bf-7b3c16c2d393","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

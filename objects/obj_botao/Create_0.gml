@@ -9,3 +9,5 @@ escala = 0;
 acao = function(){
 	
 }
+
+icone = function(){}

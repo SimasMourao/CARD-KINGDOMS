@@ -1,1 +1,0 @@
-//oscilar_opacidade(0.3, 0.5, 0.002);

@@ -10,5 +10,5 @@ global.mao_inimigo = [];
 
 global.vida = 3;
 
-global.baralho_lama = ["lama"];
+global.baralho_lama = [];
 global.baralho_flores = ["flor"];

@@ -1,1 +1,0 @@
-opacidade = 1;

@@ -4,5 +4,6 @@ if(keyboard_check_pressed(vk_space)){
 
 if(global.vida == 0){
 	game_restart();
-	global.vida = 3;
+	reset_var();
 }
+

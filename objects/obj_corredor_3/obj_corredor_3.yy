@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_soldado",
-  "eventList":[],
+  "%Name":"obj_corredor_3",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_soldado",
+  "name":"obj_corredor_3",
   "overriddenProperties":[],
   "parent":{
     "name":"Corredores",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_soldade_walk",
-    "path":"sprites/spr_soldade_walk/spr_soldade_walk.yy",
+    "name":"spr_corredor",
+    "path":"sprites/spr_corredor/spr_corredor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

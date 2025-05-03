@@ -8,4 +8,4 @@ opacidade = 0;
 mouse_sobre = false;
 img = 0;
 
-carta = new criar_carta(0, "bloma", 0, MONSTROS_DE_LAMA.LASO, 2, 2, 4, 3, 0);
+carta = new criar_carta();

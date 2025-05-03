@@ -7,3 +7,4 @@ if(global.vida == 0){
 	reset_var();
 }
 
+//criar_mao();

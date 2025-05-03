@@ -42,7 +42,8 @@ function desenhando_cartas(){
 
 	draw_set_font(-1)
 	//desenho_monstro
-	draw_sprite_ext(spr_reino_lama, carta.monstro, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+	draw_sprite_ext(spr_reinos, carta.monstro, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+	//draw_sprite_ext(spr_reinos_1, carta.monstro, x, y, escala_tipo*1.5, escala_tipo*1.5, image_angle, image_blend, image_alpha);
 
 	if(mouse_sobre){
 		draw_set_halign(fa_center);
@@ -62,30 +63,56 @@ function desenhando_cartas(){
 
 }
 
+#region //baralho
 function carta_lama(){
 	//bloma
-	var nome0 = "bloma", moldura0 = 0, tipo0 = 0, tipo_vida0 = 4, poder0 = 1, vida0 = 3, monstro0 = MONSTROS_DE_LAMA.BLOMA;
+	var nome0 = "bloma", moldura0 = 0, tipo0 = 0, tipo_vida0 = 4, poder0 = 1, vida0 = 3, monstro0 = MONSTROS.BLOMA;
 	var bloma = new criar_carta(0, nome0, moldura0, tipo0, tipo_vida0, poder0, vida0, monstro0);
 	
 	//laso
-	var nome1 = "laso", moldura1 = 0, tipo1 = 0, tipo_vida1 = 4, poder1 = 1, vida1 = 4, monstro1 =  MONSTROS_DE_LAMA.LASO;
+	var nome1 = "laso", moldura1 = 0, tipo1 = 0, tipo_vida1 = 4, poder1 = 1, vida1 = 4, monstro1 =  MONSTROS.LASO;
 	var laso = new criar_carta(0, nome1, moldura1, tipo1, tipo_vida1, poder1, vida1, monstro1);
 	
 	//garro
-	var nome2 = "garro", moldura2 = 0, tipo2 = 0, tipo_vida2 = 4, poder2 = 3, vida2 = 6, monstro2 =  MONSTROS_DE_LAMA.GARRO;
+	var nome2 = "garro", moldura2 = 0, tipo2 = 0, tipo_vida2 = 4, poder2 = 3, vida2 = 6, monstro2 =  MONSTROS.GARRO;
 	var garro = new criar_carta(0, nome2, moldura2, tipo2, tipo_vida2, poder2, vida2, monstro2);
 	
 	//urma
-	var nome3 = "urma", moldura3 = 0, tipo3 = 1, tipo_vida3 = 4, poder3 = 2, vida3 = 3, monstro3 =  MONSTROS_DE_LAMA.URMA;
+	var nome3 = "urma", moldura3 = 0, tipo3 = 1, tipo_vida3 = 4, poder3 = 2, vida3 = 3, monstro3 =  MONSTROS.URMA;
 	var urma = new criar_carta(0, nome3, moldura3, tipo3, tipo_vida3, poder3, vida3, monstro3);
 	
 	array_push(global.baralho_lama, bloma, garro, laso, urma);
 
 }
 
-function criar_mao(){
+function carta_flor(){
+	//bloma
+	var nome0 = "semente", moldura0 = 0, tipo0 = 0, tipo_vida0 = 4, poder0 = 1, vida0 = 3, monstro0 = MONSTROS.SEMENTE;
+	var semente = new criar_carta(1, nome0, moldura0, tipo0, tipo_vida0, poder0, vida0, monstro0);
 	
+	//laso
+	var nome1 = "titereiro", moldura1 = 0, tipo1 = 0, tipo_vida1 = 4, poder1 = 0.5, vida1 = 5, monstro1 =  MONSTROS.TITEREIRO;
+	var titere = new criar_carta(1, nome1, moldura1, tipo1, tipo_vida1, poder1, vida1, monstro1);
+	
+	//garro
+	var nome2 = "tronco", moldura2 = 0, tipo2 = 0, tipo_vida2 = 4, poder2 = 0, vida2 = 8, monstro2 =  MONSTROS.TRONCO;
+	var tronco = new criar_carta(1, nome2, moldura2, tipo2, tipo_vida2, poder2, vida2, monstro2);
+	
+	//urma
+	var nome3 = "vespa", moldura3 = 0, tipo3 = 0, tipo_vida3 = 4, poder3 = 4, vida3 = 2, monstro3 =  MONSTROS.VESPA;
+	var vespa = new criar_carta(1, nome3, moldura3, tipo3, tipo_vida3, poder3, vida3, monstro3);
+	
+	array_push(global.baralho_flores, semente, titere, tronco, vespa);
+
 }
+#endregion
+
+/*function criar_mao(){
+	for(var i = 0; i <= 3; i++){
+		var _carta_atual = irandom(4);
+		array_push(global.mao, global.baralho[_carta_atual]);
+	}
+}*/
 
 function reset_var(){
 	global.bar_select = false;

@@ -1,12 +1,18 @@
 #region
-	enum MONSTROS_DE_LAMA
+	enum MONSTROS
 	{
 		BLOMA,
 		LASO,
 		GARRO,
-		URMA
+		URMA,
+		TOTAL_LAMA,
+		SEMENTE,
+		TITEREIRO,
+		TRONCO,
+		VESPA,
+		TOTAL_FLOR
 	}
-
+	
 #endregion
 
 function criar_carta(_fundo = 0, _nome = "", _moldura_nome = 0, _desenho_monstro = 0, _tipo = 0, _poder = 0, _tipo_vida = 0, _vida = 1, _moldura = 0) constructor{

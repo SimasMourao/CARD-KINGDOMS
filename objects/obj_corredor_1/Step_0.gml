@@ -1,0 +1,1 @@
+aumentar_tamanho(1, 1.05, 0.4);

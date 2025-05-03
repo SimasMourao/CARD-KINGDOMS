@@ -8,8 +8,8 @@
   "name":"obj_corredor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jogo",
-    "path":"folders/Objects/Jogo.yy",
+    "name":"Corredores",
+    "path":"folders/Objects/Jogo/Corredores.yy",
   },
   "parentObjectId":null,
   "persistent":false,

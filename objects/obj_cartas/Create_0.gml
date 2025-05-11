@@ -6,6 +6,7 @@ image_alpha = 0.8;
 escala_tipo = .6;
 opacidade = 0;
 mouse_sobre = false;
+clique = false;
 img = 0;
 
-carta = new criar_carta();
+carta = global.mao[0];

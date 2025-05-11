@@ -11,3 +11,6 @@ acao = function(){
 }
 
 icone = function(){}
+
+create = function(){}
+

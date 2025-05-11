@@ -5,12 +5,10 @@
 		LASO,
 		GARRO,
 		URMA,
-		TOTAL_LAMA,
 		SEMENTE,
 		TITEREIRO,
 		TRONCO,
-		VESPA,
-		TOTAL_FLOR
+		VESPA
 	}
 	
 #endregion

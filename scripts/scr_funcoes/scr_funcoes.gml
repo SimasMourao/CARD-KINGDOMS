@@ -67,19 +67,19 @@ function desenhando_cartas(){
 function carta_lama(){
 	//bloma
 	var nome0 = "bloma", moldura0 = 0, tipo0 = 0, tipo_vida0 = 4, poder0 = 1, vida0 = 3, monstro0 = MONSTROS.BLOMA;
-	var bloma = new criar_carta(0, nome0, moldura0, tipo0, tipo_vida0, poder0, vida0, monstro0);
+	var bloma = new criar_carta(0, nome0, moldura0, monstro0, tipo0, poder0, tipo_vida0, vida0, 0);
 	
 	//laso
 	var nome1 = "laso", moldura1 = 0, tipo1 = 0, tipo_vida1 = 4, poder1 = 1, vida1 = 4, monstro1 =  MONSTROS.LASO;
-	var laso = new criar_carta(0, nome1, moldura1, tipo1, tipo_vida1, poder1, vida1, monstro1);
+	var laso = new criar_carta(0, nome1, moldura1, monstro1, tipo1, poder1, tipo_vida1, vida1, 0);
 	
 	//garro
-	var nome2 = "garro", moldura2 = 0, tipo2 = 0, tipo_vida2 = 4, poder2 = 3, vida2 = 6, monstro2 =  MONSTROS.GARRO;
-	var garro = new criar_carta(0, nome2, moldura2, tipo2, tipo_vida2, poder2, vida2, monstro2);
+	var nome2 = "garro", moldura2 = 0, tipo2 = 0, tipo_vida2 = 4, poder2 = 4, vida2 = 6, monstro2 =  MONSTROS.GARRO;
+	var garro = new criar_carta(0, nome2, moldura2, monstro2, tipo2, poder2, tipo_vida2, vida2, 0);
 	
 	//urma
-	var nome3 = "urma", moldura3 = 0, tipo3 = 1, tipo_vida3 = 4, poder3 = 2, vida3 = 3, monstro3 =  MONSTROS.URMA;
-	var urma = new criar_carta(0, nome3, moldura3, tipo3, tipo_vida3, poder3, vida3, monstro3);
+	var nome3 = "urma", moldura3 = 0, tipo3 = 0, tipo_vida3 = 4, poder3 = 2, vida3 = 3, monstro3 =  MONSTROS.URMA;
+	var urma = new criar_carta(0, nome3, moldura3, monstro3, tipo3, poder3, tipo_vida3, vida3, 0);
 	
 	array_push(global.baralho_lama, bloma, garro, laso, urma);
 
@@ -88,35 +88,81 @@ function carta_lama(){
 function carta_flor(){
 	//bloma
 	var nome0 = "semente", moldura0 = 0, tipo0 = 0, tipo_vida0 = 4, poder0 = 1, vida0 = 3, monstro0 = MONSTROS.SEMENTE;
-	var semente = new criar_carta(1, nome0, moldura0, tipo0, tipo_vida0, poder0, vida0, monstro0);
+	var semente = new criar_carta(1, nome0, moldura0, monstro0, tipo0, poder0, tipo_vida0, vida0, 0);
 	
 	//laso
 	var nome1 = "titereiro", moldura1 = 0, tipo1 = 0, tipo_vida1 = 4, poder1 = 0.5, vida1 = 5, monstro1 =  MONSTROS.TITEREIRO;
-	var titere = new criar_carta(1, nome1, moldura1, tipo1, tipo_vida1, poder1, vida1, monstro1);
+	var titere = new criar_carta(1, nome1, moldura1, monstro1, tipo1, poder1, tipo_vida1, vida1, 0);
 	
 	//garro
 	var nome2 = "tronco", moldura2 = 0, tipo2 = 0, tipo_vida2 = 4, poder2 = 0, vida2 = 8, monstro2 =  MONSTROS.TRONCO;
-	var tronco = new criar_carta(1, nome2, moldura2, tipo2, tipo_vida2, poder2, vida2, monstro2);
+	var tronco = new criar_carta(1, nome2, moldura2, monstro2, tipo2, poder2, tipo_vida2, vida2, 0);
 	
 	//urma
 	var nome3 = "vespa", moldura3 = 0, tipo3 = 0, tipo_vida3 = 4, poder3 = 4, vida3 = 2, monstro3 =  MONSTROS.VESPA;
-	var vespa = new criar_carta(1, nome3, moldura3, tipo3, tipo_vida3, poder3, vida3, monstro3);
+	var vespa = new criar_carta(1, nome3, moldura3, monstro3, tipo3, poder3, tipo_vida3, vida3, 0);
 	
 	array_push(global.baralho_flores, semente, titere, tronco, vespa);
 
 }
 #endregion
 
-/*function criar_mao(){
-	for(var i = 0; i <= 3; i++){
-		var _carta_atual = irandom(4);
-		array_push(global.mao, global.baralho[_carta_atual]);
+randomize();
+function criar_mao(){
+	
+	for(var i = 0; i <= 2; i++){
+		var atual = irandom(3)
+		array_push(global.mao, global.baralho[atual]);
 	}
-}*/
+}
+
+function usar_carta(){
+	for(var i = 0; i <= array_length(global.mao) -1; i++){
+		array_push(global.cemiterio, global.mao[i]);
+	}
+	global.mao = [];
+}
+
+function comprar_carta(qtd_cartas){
+	if(array_length(global.baralho) <= 1){
+		for(var i = 0; i <= array_length(global.cemiterio) -1; i++){
+			array_push(global.baralho, global.cemiterio[i]);
+		}
+		global.cemiterio = [];
+		
+	}
+	
+	for(var i= 0; i < qtd_cartas; i++){
+		if(array_length(global.baralho) > 0){
+			var indice = irandom(array_length(global.baralho) -1)
+			var carta = global.baralho[indice];
+			array_push(global.mao, carta);
+			array_delete(global.baralho, indice, 1);
+		}
+	}
+	
+}
+
+function atualizar_mao() {
+	// Destruir todas as cartas da mão na tela
+	with (obj_cartas) {
+		instance_destroy();
+	}
+	
+	// Criar novas cartas com base na global.mao
+	for (var i = 0; i < array_length(global.mao); i++) {
+		var _carta = instance_create_layer(660 + 110 * i, y + 640, "Instances", obj_cartas);
+		_carta.carta = global.mao[i];
+	}
+}
+
+
 
 function reset_var(){
-	global.bar_select = false;
 	global.baralho = [];
+	global.cemiterio = [];
+	global.mao = [];
+	global.mao_inimigo = [];
 	global.baralho_inimigo = [];
 	global.vida = 3;
 }

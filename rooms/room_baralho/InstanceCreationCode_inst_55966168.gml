@@ -4,8 +4,7 @@ icone = function(){
 
 acao = function(){
 	global.bar_select = true;
-	
-	array_push(global.baralho, global.baralho_lama);
-	
-	array_push(global.baralho_inimigo, global.baralho_flores);
+	//array_copy, copia os valores de um vetor para o outro
+	array_copy(global.baralho, 0, global.baralho_lama, 0, array_length(global.baralho_lama));
+	array_copy(global.baralho_inimigo, 0, global.baralho_flores, 0, array_length(global.baralho_flores));
 }

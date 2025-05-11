@@ -1,8 +1,8 @@
-escala_coracao = 3;
+escala_coracao = 2;
 
+criar_mao();
+for(var i = 0; i < 2; i++){
+	var _carta = instance_create_layer( 660 + 110 *i, y + 640, layer, obj_cartas);
 
-for(var i = 0; i <= 3; i++){
-	instance_create_layer(x + 480 + 90 *i, y + 648, layer, obj_cartas);
-
-	//_carta.carta = global.mao[i];
+	_carta.carta = global.mao[i];
 }

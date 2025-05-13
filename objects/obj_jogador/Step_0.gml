@@ -13,3 +13,7 @@ if(global.vida == 0){
 	reset_var();
 }
 
+if(global.vida_inimigo == 0){
+	reset_var();
+	room_goto(room_vitoria);
+}

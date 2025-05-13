@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_corredor_2",
+  "%Name":"obj_soldado_inimigo",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_corredor_2",
+  "name":"obj_soldado_inimigo",
   "overriddenProperties":[],
   "parent":{
     "name":"Corredores",
     "path":"folders/Objects/Jogo/Corredores.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_entidade",
+    "path":"objects/obj_entidade/obj_entidade.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_corredor",
-    "path":"sprites/spr_corredor/spr_corredor.yy",
+    "name":"spr_soldade_walk",
+    "path":"sprites/spr_soldade_walk/spr_soldade_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

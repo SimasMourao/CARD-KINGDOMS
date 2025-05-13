@@ -1,4 +1,4 @@
-function oscilar_opacidade(opacidade_min = 0, opacidade_max = 1, veloc = 0,){
+function oscilar_opacidade(opacidade_min = 0, opacidade_max = 1, veloc = 0){
 	var onda = sin(current_time * veloc);
 	
 	onda = (onda + 0.5/ 1);
@@ -165,4 +165,5 @@ function reset_var(){
 	global.mao_inimigo = [];
 	global.baralho_inimigo = [];
 	global.vida = 3;
+	global.vida_inimigo = 3;
 }

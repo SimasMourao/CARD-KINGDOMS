@@ -1,13 +1,18 @@
 mouse_sobre = position_meeting(mouse_x, mouse_y, id);
+clique = mouse_check_button_released(mb_left);
 
 if(mouse_sobre){
-	escala = 1.8;
-	opacidade = 1;
+	if(clique){
+		escala = 1.8;
+		opacidade = 1;
+	}
 }
 
-else{;
-	escala = 1;
-	opacidade = 0.5;
+else{
+	if(clique){
+		escala = 1;
+		opacidade = 0.5;
+	}
 }
 
 image_alpha = lerp(image_alpha, opacidade, 0.1);

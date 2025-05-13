@@ -1,5 +1,8 @@
 global.pause = false;
 
+global.carta_atual = noone;
+global.corredor_atual = noone;
+
 global.bar_select = false;
 
 global.carta_select = false;

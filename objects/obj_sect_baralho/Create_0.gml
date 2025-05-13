@@ -1,9 +1,9 @@
-
+clique = false;
 mouse_sobre =  false;
 
-image_alpha = 0.5
-opacidade = 0;
-escala = 0;
+image_alpha = .5;
+opacidade = .5;
+escala = 1;
 
 
 icone = function(){};

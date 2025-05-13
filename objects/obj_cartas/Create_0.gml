@@ -3,8 +3,9 @@ image_yscale = 2;
 
 image_alpha = 0.8;
 
+escala = 2;
 escala_tipo = .6;
-opacidade = 0;
+opacidade = .7;
 mouse_sobre = false;
 clique = false;
 img = 0;

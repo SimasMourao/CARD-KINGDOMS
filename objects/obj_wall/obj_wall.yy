@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_corredor_3",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_wall",
+  "eventList":[],
   "managed":true,
-  "name":"obj_corredor_3",
+  "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Corredores",
-    "path":"folders/Objects/Jogo/Corredores.yy",
+    "name":"Jogo",
+    "path":"folders/Objects/Jogo.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_corredor",
-    "path":"sprites/spr_corredor/spr_corredor.yy",
+    "name":"spr_wall",
+    "path":"sprites/spr_wall/spr_wall.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -21,7 +21,7 @@ function criar_carta(_fundo = 0, _nome = "", _moldura_nome = 0, _desenho_monstro
 	nome			=_nome;
 	monstro			=_desenho_monstro;
 	tipo			=_tipo
-	poder			=	_poder;
+	poder			=_poder;
 	tipo_vida		=_tipo_vida
 	vida			=_vida;
 	moldura			=_moldura;
@@ -30,7 +30,11 @@ function criar_carta(_fundo = 0, _nome = "", _moldura_nome = 0, _desenho_monstro
 	
 	acao = function(_x, _y, _layer){
 		var _meio = sprite_get_width(spr_corredor)/24;
-		show_debug_message("otoaqui");
-		instance_create_layer( _x + _meio, _y, _layer, obj_soldado)
+		var _soldado =instance_create_layer( _x + _meio, _y, _layer, obj_soldado);
+		_soldado.carta = self;
+		global.vez_jogador = false;
+		obj_jogador.reset_tempo();
+		
+		return _soldado;
 	}
 }

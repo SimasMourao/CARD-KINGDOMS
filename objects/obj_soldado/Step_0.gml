@@ -3,7 +3,7 @@ cor = c_white;
 cordenada = y - 25;
 angulo = 0;
 obj_colide = obj_soldado_inimigo;
-vida = global.vida_inimigo;
+
 if(place_meeting(x, y, obj_chegada)){
-	global.vida_inimigo --;
+	global.vida_inimigo--;
 }

@@ -1,10 +1,21 @@
+if (vida == 0 && variable_instance_exists(id, "carta")) {
+    vida = carta.vida;
+    dano = carta.poder;
+    
+    show_debug_message("carta usada: " + carta.nome + ", vida: " + string(carta.vida) + ", poder: " + string(carta.poder));
+}
+
+if(vida == 0){
+	vspd = 0;
+}
+
 if(place_meeting(x, y, obj_chegada)){
 	instance_destroy();
-
 }
 
 if(place_meeting(x, y,obj_colide)){
 	vspd = 0;
+	sprite_index = spr_soldade_atack;
 	colidindo = true;
 
 }
@@ -12,12 +23,5 @@ if(place_meeting(x, y,obj_colide)){
 else{
 	colidindo = false;
 	vspd = spd;
-}
-
-if(vspd == 0){
-	sprite_index = spr_soldade_atack;
-}
-
-else{
 	sprite_index = spr_soldade_walk;
 }

@@ -1,7 +1,7 @@
 image_xscale = 2;
 image_yscale = 2;
 
-image_alpha = 0.8;
+image_alpha = 0.7;
 
 escala = 2;
 escala_tipo = .6;

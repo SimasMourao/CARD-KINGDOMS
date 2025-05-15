@@ -1,5 +1,7 @@
 global.pause = false;
 
+global.vez_jogador = true;
+
 global.carta_atual = noone;
 global.corredor_atual = noone;
 

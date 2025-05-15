@@ -5,7 +5,7 @@ cor = c_red;
 cordenada = y + 25;
 angulo = 180;
 obj_colide = obj_soldado;
-y += spd;
+
 if(place_meeting(x, y, obj_chegada)){
-	global.vida--;
+	global.vida --;
 }

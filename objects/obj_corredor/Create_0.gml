@@ -1,4 +1,5 @@
 escala = 0
+opacidade = 0;
 mouse_sobre = false;
 clique = false;
 custo = 0;

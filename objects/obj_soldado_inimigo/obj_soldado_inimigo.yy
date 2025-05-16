@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_soldade_walk",
-    "path":"sprites/spr_soldade_walk/spr_soldade_walk.yy",
+    "name":"spr_soldade_idle",
+    "path":"sprites/spr_soldade_idle/spr_soldade_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

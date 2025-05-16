@@ -5,9 +5,6 @@ if (vida == 0 && variable_instance_exists(id, "carta")) {
     show_debug_message("carta usada: " + carta.nome + ", vida: " + string(carta.vida) + ", poder: " + string(carta.poder));
 }
 
-if(vida == 0){
-	vspd = 0;
-}
 
 if(place_meeting(x, y, obj_chegada)){
 	instance_destroy();
@@ -24,4 +21,8 @@ else{
 	colidindo = false;
 	vspd = spd;
 	sprite_index = spr_soldade_walk;
+}
+
+if(global.pause == true){
+	sprite_index = spr_soldade_idle;
 }

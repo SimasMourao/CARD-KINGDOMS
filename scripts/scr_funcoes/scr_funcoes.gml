@@ -45,7 +45,7 @@ function desenhando_cartas(){
 	draw_sprite_ext(spr_reinos, carta.monstro, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 	//draw_sprite_ext(spr_reinos_1, carta.monstro, x, y, escala_tipo*1.5, escala_tipo*1.5, image_angle, image_blend, image_alpha);
 
-	if(mouse_sobre){
+	if(mouse_sobre && global.pause != true){
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 		
@@ -124,7 +124,7 @@ function usar_carta(){
 }
 
 function comprar_carta(qtd_cartas){
-	if(array_length(global.baralho) <= 1){
+	if(array_length(global.baralho) < 1){
 		for(var i = 0; i <= array_length(global.cemiterio) -1; i++){
 			array_push(global.baralho, global.cemiterio[i]);
 		}
@@ -145,7 +145,7 @@ function comprar_carta(qtd_cartas){
 
 function atualizar_mao() {
 	// Destruir todas as cartas da mão na tela
-	with (obj_cartas) {
+	with (global.carta_atual){
 		instance_destroy();
 	}
 	
@@ -156,7 +156,18 @@ function atualizar_mao() {
 	}
 }
 
+function pause(){
+	instance_create_layer(0, 0, "pause", obj_pause);
+}
 
+function desenhar_pause(){
+	draw_rectangle_color(574, 223,861, 477, c_black, c_black, c_black, c_black, c_black);
+	draw_sprite_ext(spr_coroa, 0, 722, 160, 1, 1, 0, image_blend, 1);
+	draw_sprite_ext(spr_vertice_1, 0, 574, 223, -1, 1, 180, image_blend, 1);
+	draw_sprite_ext(spr_vertice_1, 0, 574, 477, 1, 1, 0, image_blend, 1);
+	draw_sprite_ext(spr_vertice_1, 0, 861, 223, 1, 1, 180, image_blend, 1);
+	draw_sprite_ext(spr_vertice_1, 0, 861, 477, -1, 1, 0, image_blend, 1);
+}
 
 function reset_var(){
 	global.pause = false;

@@ -1,5 +1,5 @@
-escala = 0
 opacidade = 0;
+image_alpha = opacidade;
 mouse_sobre = false;
 clique = false;
 custo = 0;

@@ -23,3 +23,5 @@ global.baralho_lama = [];
 global.baralho_flores = [];
 
 global.cemiterio = [];
+
+global.contagem_colisao = [];

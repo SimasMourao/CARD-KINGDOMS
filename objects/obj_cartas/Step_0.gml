@@ -1,11 +1,12 @@
 mouse_sobre = position_meeting(mouse_x, mouse_y, id);
 clique = mouse_check_button_released(mb_left);
 
-#region
-	var _outra_carta = position_meeting(mouse_x, mouse_y, obj_cartas);
-	var _corredor = position_meeting(mouse_x, mouse_y, obj_corredor);
-	var escala_alvo = 0;
 
+var _outra_carta = position_meeting(mouse_x, mouse_y, obj_cartas);
+var _corredor = position_meeting(mouse_x, mouse_y, obj_corredor);
+var escala_alvo = 0;
+
+if(global.pause == false){
 	if(mouse_sobre){
 		
 		escala = 2.5;
@@ -46,4 +47,4 @@ clique = mouse_check_button_released(mb_left);
 	image_yscale = lerp(image_yscale, escala, 0.4);
 	escala_tipo = lerp(escala_tipo, escala_alvo, 0.4);
 	image_alpha = lerp(image_alpha, opacidade, 0.4);
-#endregion
+}

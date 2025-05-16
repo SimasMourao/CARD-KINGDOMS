@@ -1,6 +1,17 @@
 acao = function(){
 	global.pause = true;
 	global.carta_atual = noone;
-	global.corredor_atual = noone;
-	room_goto(room_pause);
+	pause();
+}
+
+mover = function(){
+	
+	if(global.pause == true){
+		x = 33;
+		y = -64;
+	}
+	else{
+		x = 60;
+		y = 64;
+	}
 }

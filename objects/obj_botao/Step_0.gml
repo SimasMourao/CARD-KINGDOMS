@@ -1,3 +1,4 @@
+mover();
 mouse_sobre = position_meeting(mouse_x, mouse_y, id);
 
 if(mouse_sobre){
@@ -13,4 +14,3 @@ else{;
 image_alpha = lerp(image_alpha, opacidade, 0.1);
 image_xscale = lerp(image_xscale, escala, 0.4);
 image_yscale = lerp(image_yscale, escala, 0.4);
-create();

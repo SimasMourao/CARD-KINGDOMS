@@ -6,11 +6,9 @@ escala = 0;
 
 
 //função metodo da acão do botão:
-acao = function(){
-	
-}
+acao = function(){}
 
 icone = function(){}
 
-create = function(){}
+mover = function(){}
 

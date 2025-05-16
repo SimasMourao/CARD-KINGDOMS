@@ -1,46 +1,44 @@
 mouse_sobre = (position_meeting(mouse_x, mouse_y, obj_baralho));
 clique = mouse_check_button_released(mb_left);
 
-tempo_atual --;
+if(global.pause == false){
+	tempo_atual --;
 
-	if(tempo_atual < 0 && global.vez_jogador = false){
-		tempo_atual = tempo
-		global.vez_jogador = true;
-	}
-	else if(tempo_atual < 0 && global.vez_jogador = true){
-		tempo_atual = tempo
-		global.vez_jogador = false;		
-	}
+		if(tempo_atual < 0 && global.vez_jogador = false){
+			tempo_atual = tempo
+			global.vez_jogador = true;
+		}
+		else if(tempo_atual < 0 && global.vez_jogador = true){
+			tempo_atual = tempo
+			global.vez_jogador = false;		
+		}
 
-if(global.vez_jogador == true){
-	if(mouse_check_button_pressed(mb_right)){
-		usar_carta();
-		atualizar_mao();
-	}
-
-	if(mouse_sobre){
+	if(global.vez_jogador == true){
+		if(mouse_sobre){
 	
-		if(clique){
-			comprar_carta(2);
-			atualizar_mao();
+			if(clique){
+				comprar_carta(2);
+				atualizar_mao();
 			}
+		}
+
 	}
-	
-}
-if(keyboard_check_pressed(vk_space)){
-	global.vida --;
-}
 
-if(global.vida == 0){
-	game_restart();
-	room_goto(room_menu);
-	reset_var();
-}
+	if(keyboard_check_pressed(vk_space)){
+		global.vida --;
+	}
 
-if(global.vida_inimigo == 0){
-	transicao --;
-	if( transicao == 0){
+	if(global.vida == 0){
+		game_restart();
+		room_goto(room_menu);
 		reset_var();
-		room_goto(room_vitoria);
+	}
+
+	if(global.vida_inimigo == 0){
+		transicao --;
+		if( transicao == 0){
+			reset_var();
+			room_goto(room_vitoria);
+		}
 	}
 }

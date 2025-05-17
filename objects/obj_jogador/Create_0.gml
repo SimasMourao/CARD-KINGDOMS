@@ -1,6 +1,6 @@
 tem_lama = false;
 tem_flores = false;
-tempo = 180;
+tempo = 165;
 transicao = 50;
 tempo_atual = tempo
 

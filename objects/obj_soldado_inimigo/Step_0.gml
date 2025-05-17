@@ -13,8 +13,3 @@ if(global.pause == false){
 	}
 }
 
-for(var i = 0; i < array_length(global.contagem_colisao); i++){
-	if(global.contagem_colisao[i] == id){
-		array_delete(global.contagem_colisao, i, 1);
-	}
-}

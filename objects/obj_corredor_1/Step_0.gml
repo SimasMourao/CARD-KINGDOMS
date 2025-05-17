@@ -29,6 +29,7 @@ if(global.pause == false){
 		}
 	}
 }
+
 if(global.corredor_atual == id){
 
 	opacidade = 1;

@@ -107,55 +107,69 @@ function carta_flor(){
 }
 #endregion
 
-randomize();
-function criar_mao(){
+#region // MAO JOGADOR
+	function criar_mao(){
 	
-	for(var i = 0; i <= 2; i++){
-		var atual = irandom(3)
-		array_push(global.mao, global.baralho[atual]);
-	}
-}
-
-function usar_carta(){
-	for(var i = 0; i <= array_length(global.mao) -1; i++){
-		array_push(global.cemiterio, global.mao[i]);
-	}
-	global.mao = [];
-}
-
-function comprar_carta(qtd_cartas){
-	if(array_length(global.baralho) < 1){
-		for(var i = 0; i <= array_length(global.cemiterio) -1; i++){
-			array_push(global.baralho, global.cemiterio[i]);
-		}
-		global.cemiterio = [];
-		
-	}
-	
-	for(var i= 0; i < qtd_cartas; i++){
-		if(array_length(global.baralho) > 0){
-			var indice = irandom(array_length(global.baralho) -1)
-			var carta = global.baralho[indice];
-			array_push(global.mao, carta);
-			array_delete(global.baralho, indice, 1);
+		for(var i = 0; i <= 2; i++){
+			var atual = irandom(3)
+			array_push(global.mao, global.baralho[atual]);
 		}
 	}
+
+	function usar_carta(){
+		for(var i = 0; i <= array_length(global.mao) -1; i++){
+			array_push(global.cemiterio, global.mao[i]);
+		}
+		global.mao = [];
+	}
+
+	function comprar_carta(qtd_cartas){
+		if(array_length(global.baralho) < 2){
+			for(var i = 0; i <= array_length(global.cemiterio) -1; i++){
+				array_push(global.baralho, global.cemiterio[i]);
+			}
+			global.cemiterio = [];
+		
+		}
 	
+		for(var i= 0; i < qtd_cartas; i++){
+			if(array_length(global.baralho) > 0){
+				var indice = irandom(array_length(global.baralho) -1)
+				var carta = global.baralho[indice];
+				array_push(global.mao, carta);
+				array_delete(global.baralho, indice, 1);
+			}
+		}
+		//show_debug_message("Baralho: " + string(array_length(global.baralho)) + " | Cemitério: " + string(array_length(global.cemiterio)));
+
+	}
+
+	function atualizar_mao() {
+		with (global.carta_atual){
+			instance_destroy();
+			global.cartas_usadas ++;
+			global.carta_atual = noone;
+		
+		}
+	
+		// Criar novas cartas com base na global.mao
+		for (var i = 0; i < array_length(global.mao); i++) {
+			var _carta = instance_create_layer(660 + 110 * i, y + 640, "Instances", obj_cartas);
+			_carta.carta = global.mao[i];
+		}
+	}
+#endregion
+
+function inimigo_usar_cartas(){
+	for(var i = 0; i < 1; i++){
+		var indice = irandom(array_length(global.baralho_inimigo)-1);
+		global.carta_atual_inimigo = indice;
+		obj_inimigo.parar = false;
+		obj_inimigo.tempo_turno = 1;
+		global.vez_jogador = true;
+	}
 }
 
-function atualizar_mao() {
-	with (global.carta_atual){
-		instance_destroy();
-		global.cartas_usadas ++;
-		
-	}
-	
-	// Criar novas cartas com base na global.mao
-	for (var i = 0; i < array_length(global.mao); i++) {
-		var _carta = instance_create_layer(660 + 110 * i, y + 640, "Instances", obj_cartas);
-		_carta.carta = global.mao[i];
-	}
-}
 
 function pause(){
 	instance_create_layer(0, 0, "pause", obj_pause);
@@ -196,5 +210,4 @@ function reset_var(){
 	global.baralho_flores = [];
 
 	global.cemiterio = [];
-	global.contagem_colisao = [];
 }

@@ -4,11 +4,10 @@ clique = mouse_check_button_released(mb_left);
 if(global.pause == false){
 	tempo_atual --;
 
-	if(tempo_atual < 0 && global.vez_jogador = false){
-		tempo_atual = tempo
-		global.vez_jogador = true;
+	if(global.vez_jogador = false){
+		tempo_atual = tempo;
 	}
-	else if(tempo_atual < 0 && global.vez_jogador = true){
+	if(tempo_atual < 0 && global.vez_jogador = true){
 		tempo_atual = tempo
 		global.vez_jogador = false;		
 	}
@@ -26,9 +25,7 @@ if(global.pause == false){
 
 	}
 
-	if(keyboard_check_pressed(vk_space)){
-		global.vida --;
-	}
+
 
 	if(global.vida == 0){
 		game_restart();

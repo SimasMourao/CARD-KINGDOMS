@@ -8,8 +8,8 @@
   "name":"obj_baralho",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jogo",
-    "path":"folders/Objects/Jogo.yy",
+    "name":"Cartas",
+    "path":"folders/Objects/Jogo/Cartas.yy",
   },
   "parentObjectId":null,
   "persistent":false,

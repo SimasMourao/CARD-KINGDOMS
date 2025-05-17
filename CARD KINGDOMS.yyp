@@ -14,6 +14,8 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Jogo","folderPath":"folders/Objects/Jogo.yy","name":"Jogo","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Corredores","folderPath":"folders/Objects/Jogo/Corredores.yy","name":"Corredores","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Cartas","folderPath":"folders/Objects/Jogo/Cartas.yy","name":"Cartas","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Soldado","folderPath":"folders/Objects/Jogo/Soldado.yy","name":"Soldado","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objects/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"selec_bar","folderPath":"folders/Objects/Menu/selec_bar.yy","name":"selec_bar","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},

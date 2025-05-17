@@ -70,10 +70,6 @@ for(var i = tempo_atual; i > 0; i--){
 		draw_sprite_ext(spr_barra, image_index, 1379 - 16 * i, 760, image_xscale, image_yscale, image_angle, c_white, image_alpha);
 		draw_text_transformed_color(415, 670, "sua vez!", image_xscale, image_yscale, image_angle, c_white, c_white, c_white, c_white, image_alpha);
 	}
-	else{
-		draw_sprite_ext(spr_barra, image_index, -16 + 16 * i, 8, image_xscale, image_yscale, image_angle, c_red, image_alpha);
-		draw_text_transformed_color(929, 12, "inimigo!", image_xscale, image_yscale, image_angle, c_red, c_red, c_red, c_red, image_alpha);
-	}
 }
 draw_set_font(-1);
 //draw_text(60, 40, tempo_atual);

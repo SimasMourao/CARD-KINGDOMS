@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_soldado_inimigo",
+  "%Name":"obj_corredor_entidade",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_soldado_inimigo",
+  "name":"obj_corredor_entidade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Soldado",
-    "path":"folders/Objects/Jogo/Soldado.yy",
+    "name":"Corredores",
+    "path":"folders/Objects/Jogo/Corredores.yy",
   },
-  "parentObjectId":{
-    "name":"obj_entidade",
-    "path":"objects/obj_entidade/obj_entidade.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_soldade_idle",
-    "path":"sprites/spr_soldade_idle/spr_soldade_idle.yy",
+    "name":"spr_corredor",
+    "path":"sprites/spr_corredor/spr_corredor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

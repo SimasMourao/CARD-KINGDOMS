@@ -16,7 +16,7 @@ if(global.pause == false){
 			img += .4;
 		}
 	
-		if(clique ){
+		if(clique){
 			global.carta_atual = id;
 		}
 		
@@ -47,4 +47,10 @@ if(global.pause == false){
 	image_yscale = lerp(image_yscale, escala, 0.4);
 	escala_tipo = lerp(escala_tipo, escala_alvo, 0.4);
 	image_alpha = lerp(image_alpha, opacidade, 0.4);
+	
+	if(_corredor){
+		if(clique){
+			global.carta_atual = noone;
+		}
+	}
 }

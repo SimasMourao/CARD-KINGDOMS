@@ -1,9 +1,8 @@
-mouse_sobre = position_meeting(mouse_x, mouse_y, id);
+mouse_sobre = position_meeting(mouse_x, mouse_y, obj_corredor_entidade);
 clique = mouse_check_button_released(mb_left);
 
 if(global.pause == false){
 	if(global.vez_jogador == true){
-		var _outro_corredor = position_meeting(mouse_x, mouse_y, obj_corredor); 
 		if(mouse_sobre){
 			if(clique){
 			
@@ -29,6 +28,7 @@ if(global.pause == false){
 		}
 	}
 }
+
 if(global.corredor_atual == id){
 
 	opacidade = 1;

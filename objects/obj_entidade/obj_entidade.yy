@@ -11,8 +11,8 @@
   "name":"obj_entidade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Corredores",
-    "path":"folders/Objects/Jogo/Corredores.yy",
+    "name":"Soldado",
+    "path":"folders/Objects/Jogo/Soldado.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -25,3 +25,4 @@ global.baralho_flores = [];
 global.cemiterio = [];
 
 global.contagem_colisao = [];
+global.cartas_usadas = 0;

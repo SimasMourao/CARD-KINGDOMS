@@ -6,8 +6,15 @@ if(global.pause == false){
 	cordenada = y + 25;
 	angulo = 180;
 	obj_colide = obj_soldado;
+		adcao_colisao = 10;
 
 	if(place_meeting(x, y, obj_chegada)){
 		global.vida --;
+	}
+}
+
+for(var i = 0; i < array_length(global.contagem_colisao); i++){
+	if(global.contagem_colisao[i] == id){
+		array_delete(global.contagem_colisao, i, 1);
 	}
 }

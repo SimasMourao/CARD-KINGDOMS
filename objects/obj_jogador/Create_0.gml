@@ -40,3 +40,4 @@ for(var i = 0; i < 2; i++){
 
 	_carta.carta = global.mao[i];
 }
+

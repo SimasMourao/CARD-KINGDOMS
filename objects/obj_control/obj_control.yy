@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_entidade",
+  "%Name":"obj_control",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_entidade",
+  "name":"obj_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Corredores",
-    "path":"folders/Objects/Jogo/Corredores.yy",
+    "name":"selec_bar",
+    "path":"folders/Objects/Menu/selec_bar.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -144,9 +144,10 @@ function comprar_carta(qtd_cartas){
 }
 
 function atualizar_mao() {
-	// Destruir todas as cartas da mão na tela
 	with (global.carta_atual){
 		instance_destroy();
+		global.cartas_usadas ++;
+		
 	}
 	
 	// Criar novas cartas com base na global.mao
@@ -195,4 +196,5 @@ function reset_var(){
 	global.baralho_flores = [];
 
 	global.cemiterio = [];
+	global.contagem_colisao = [];
 }

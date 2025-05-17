@@ -41,4 +41,3 @@ else{
 }
 
 image_alpha = lerp(image_alpha, opacidade, .4);
-

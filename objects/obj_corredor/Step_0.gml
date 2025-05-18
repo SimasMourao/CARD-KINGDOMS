@@ -6,13 +6,6 @@ if(global.pause == false){
 		var _outro_corredor = position_meeting(mouse_x, mouse_y, obj_corredor); 
 		if(mouse_sobre){
 			if(clique){
-			
-				if(array_length(global.mao) = 1){
-					global.carta_atual = noone
-				}
-				else{
-					global.corredor_atual = id;
-				}
 				if(global.carta_atual != noone){
 					acao = global.carta_atual.carta.acao;
 				}

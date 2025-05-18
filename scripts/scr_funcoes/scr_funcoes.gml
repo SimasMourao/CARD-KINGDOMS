@@ -148,7 +148,6 @@ function carta_flor(){
 		with (global.carta_atual){
 			instance_destroy();
 			global.cartas_usadas ++;
-			global.carta_atual = noone;
 		
 		}
 	

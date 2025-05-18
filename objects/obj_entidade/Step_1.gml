@@ -7,6 +7,7 @@ if (vida == 0 && variable_instance_exists(id, "carta")) {
 
 
 if(place_meeting(x, y, obj_chegada)){
+	instance_create_layer(x, y, "jogador_inimigo",obj_de_morte);
 	instance_destroy();
 }
 

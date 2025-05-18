@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Soldado",
-    "path":"folders/Sprites/Tabuleiro/Soldado.yy",
+    "path":"folders/Sprites/Soldado.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

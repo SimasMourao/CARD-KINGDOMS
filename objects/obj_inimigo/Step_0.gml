@@ -8,9 +8,10 @@ if(global.pause == false){
 		
 		if(tempo_atual == tempo_turno){
 			tempo_atual = tempo;
-			tempo_turno = 0;
+
 			parar = false;
 			inimigo_usar_cartas();
+			tempo_turno = 0;
 		}
 	}
 }

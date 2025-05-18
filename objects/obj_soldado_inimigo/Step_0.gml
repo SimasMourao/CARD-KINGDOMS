@@ -6,7 +6,8 @@ if(global.pause == false){
 	cordenada = y + 25;
 	angulo = 180;
 	obj_colide = obj_soldado;
-		adcao_colisao = 10;
+	adcao_colisao = 10;
+	obj_de_morte = obj_morte_soldado_inim;
 
 	if(place_meeting(x, y, obj_chegada)){
 		global.vida --;

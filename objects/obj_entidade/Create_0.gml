@@ -9,4 +9,4 @@ obj_colide = obj_entidade;
 vida = 0;
 dano = 0;
 adcao_colisao = 0;
-
+obj_de_morte = obj_morte_soldado;

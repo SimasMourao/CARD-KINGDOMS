@@ -57,7 +57,7 @@ function desenhando_cartas(){
 	
 		draw_set_halign(-1);
 		draw_set_valign(-1);
-	
+		
 		draw_sprite_ext(spr_efeito, img, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 	}
 
@@ -164,7 +164,6 @@ function inimigo_usar_cartas(){
 		var indice = irandom(array_length(global.baralho_inimigo)-1);
 		global.carta_atual_inimigo = indice;
 		obj_inimigo.parar = false;
-		obj_inimigo.tempo_turno = 1;
 		global.vez_jogador = true;
 	}
 }

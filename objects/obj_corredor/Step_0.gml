@@ -7,9 +7,12 @@ if(global.pause == false){
 		var _outro_corredor = position_meeting(mouse_x, mouse_y, obj_corredor); 
 		if(mouse_sobre){
 			if(clique){
-				if(global.carta_atual != noone){
+				if(global.carta_atual != noone && instance_exists(global.carta_atual)){
 					acao = global.carta_atual.carta.acao;
 					global.corredor_atual = id;
+				}
+				else{
+					acao = noone;
 				}
 				if(is_method(acao)){
 					acao(x, y + 225,"jogador_inimigo");

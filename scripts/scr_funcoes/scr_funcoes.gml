@@ -147,6 +147,7 @@ function carta_flor(){
 	function atualizar_mao() {
 		with (global.carta_atual){
 			instance_destroy();
+			global.carta_atual = noone;
 			global.cartas_usadas ++;
 		
 		}

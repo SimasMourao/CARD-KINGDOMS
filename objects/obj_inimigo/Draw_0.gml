@@ -21,3 +21,5 @@ for(var i = tempo_atual; i > 0; i--){
 	}
 }
 draw_set_font(-1);
+
+draw_text(60, 40, global.baralho_inimigo);

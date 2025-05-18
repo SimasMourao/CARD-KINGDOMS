@@ -1,0 +1,1 @@
+ instance_create_layer(x, y, "jogador_inimigo",obj_de_morte);

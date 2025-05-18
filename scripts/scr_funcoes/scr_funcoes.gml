@@ -160,10 +160,20 @@ function carta_flor(){
 #endregion
 
 function inimigo_usar_cartas(){
-	for(var i = 0; i < 1; i++){
+	if(array_length(global.baralho_inimigo) > 0){
 		var indice = irandom(array_length(global.baralho_inimigo)-1);
-		global.carta_atual_inimigo = indice;
-		obj_inimigo.parar = false;
+		var carta_atual_inimigo = global.baralho_inimigo[indice];
+		
+		var posicoes = [555, 876, 719];
+		var posicao = posicoes[irandom(2)];
+		
+		var posX = posicao;
+		
+		var _inst = instance_create_layer( posX, 99, layer, obj_cartas);
+		_inst.carta = carta_atual_inimigo;
+		
+		show_debug_message("Inimigo usou: " + string(carta_atual_inimigo.nome));
+		
 		global.vez_jogador = true;
 	}
 }
@@ -189,8 +199,6 @@ function reset_var(){
 	
 	global.carta_atual = noone;
 	global.corredor_atual = noone;
-
-	global.bar_select = false;
 
 	global.carta_select = false;
 	global.corrdor_select = false;

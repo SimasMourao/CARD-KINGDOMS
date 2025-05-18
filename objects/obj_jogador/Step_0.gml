@@ -5,10 +5,10 @@ if(global.pause == false){
 	tempo_atual --;
 
 	if(global.vez_jogador = false){
-		tempo_atual = tempo;
+		reset_tempo();
 	}
 	if(tempo_atual < 0 && global.vez_jogador = true){
-		tempo_atual = tempo
+		reset_tempo();
 		global.vez_jogador = false;		
 	}
 

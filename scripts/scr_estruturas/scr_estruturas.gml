@@ -30,7 +30,7 @@ function criar_carta(_fundo = 0, _nome = "", _moldura_nome = 0, _desenho_monstro
 	
 	acao = function(_x, _y, _layer){
 		var _meio = sprite_get_width(spr_corredor)/24;
-		var _soldado =instance_create_layer( _x + _meio, _y, _layer, obj_soldado);
+		var _soldado =instance_create_layer(_x + _meio, _y, _layer, obj_soldado);
 		_soldado.carta = self;
 		usar_carta();
 		atualizar_mao();
@@ -38,5 +38,17 @@ function criar_carta(_fundo = 0, _nome = "", _moldura_nome = 0, _desenho_monstro
 		obj_jogador.reset_tempo();
 		
 		return _soldado;
+	}
+	
+	acao_inimigo = function(_x, _y, _layer){
+		var _meio = sprite_get_width(spr_corredor)/24;
+		var _soldado_inimigo =instance_create_layer(_x + _meio, _y, _layer, obj_soldado_inimigo);
+		_soldado_inimigo.carta = self;
+		usar_carta();
+		atualizar_mao();
+		global.vez_jogador = true;
+		obj_jogador.reset_tempo();
+		
+		return _soldado_inimigo;
 	}
 }

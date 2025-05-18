@@ -6,8 +6,6 @@ global.carta_atual = noone;
 global.carta_atual_inimigo = noone;
 global.corredor_atual = noone;
 
-global.bar_select = false;
-
 global.carta_select = false;
 global.corrdor_select = false;
 

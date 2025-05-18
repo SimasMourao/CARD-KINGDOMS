@@ -10,4 +10,4 @@ mouse_sobre = false;
 clique = false;
 img = 0;
 
-carta = global.mao[0];
+carta = noone;

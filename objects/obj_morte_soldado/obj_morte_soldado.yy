@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_soldado_destruido",
-    "path":"sprites/spr_soldado_destruido/spr_soldado_destruido.yy",
+    "name":"spr_morte_soldado",
+    "path":"sprites/spr_morte_soldado/spr_morte_soldado.yy",
   },
   "spriteMaskId":null,
   "visible":true,
